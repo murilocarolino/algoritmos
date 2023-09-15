@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="./aula03.js" defer></script>
+    <script></script>
     <title>Aula 03</title>
 </head>
 
 <body>
+
     <div class="container">
         <div class="item">
-            <label>Número 1: </label>
-            <input type="text" id="numero1">
-            <label>Número 2: </label>
-            <input type="text" id="numero2">
-            <button id="somar">SOMAR</button>
-            <span class="resultado" id="resultado"></span>
+            <label >Número 1</label>
+            <input id="numero1" type="text">
+
+            <label >Número 2</label>
+            <input id="numero2" type="text">
+
+            <button id="SOMAR">SOMAR</button>
+            <span id="resultado1" class="resultado" ></span>
         </div>
 
         <div class="item">
-            <label>Número 1: </label>
-            <input type="text" id="numero-item2">
-            <button id="identificar">IDENTIFICAR</button>
-            <span class="resultado" id="resultado-item2"></span>
+            <label> numero1</label>
+            <input id="numero-item2" type="text">
+
+            <button id="indentificar">IDENTIFICAR</button>
+            <SPAn id="resultado-item2" class="resultado"></SPAn>
         </div>
 
         <div class="item">
-            <label>Nota 1: </label>
+            <label>Nota 1</label>
             <input type="text" id="nota1">
-            <label>Nota 2: </label>
-            <input type="text" id="nota2">
-            <label>Nota 3: </label>
-            <input type="text" id="nota3">
-            <label>Nota 4: </label>
-            <input type="text" id="nota4">
-            <button id="media">Calcular Média</button>
-            <span class="resultado" id="resultado-item3"></span>
-        </div>
-    </div>
-</body>
 
+            <label>Nota 2</label>
+            <input type="text" id="nota2">
+
+            <label>Nota 3</label>
+            <input type="text" id="nota3">
+
+            <label>Nota 4</label>
+            <input type="text" id="nota4">
+
+            <div class="exame" id="exame">
+                <label>Exame</label>
+                <input type="text" id="nota-exame">
+            </div>
+
+            <button id="media" onclick="calcularMedia()">MÉDIA</button>
+            <div id="resultado-d" class="resultado"></div>
+        </div>
+
+        <div class="item">
+            <label>Número</label>
+            <input type="text" id="numero-item2">
+            <button id="identificar" onclick="verificarParImpar()">IDENTIFICAR</button>
+            <div id="resultado-item2" class="resultado"></div>
+        </div>
+        
+    </div>
+    
+    
+</body>
 </html>
